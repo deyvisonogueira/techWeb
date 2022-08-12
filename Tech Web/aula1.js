@@ -1,6 +1,7 @@
 function mudaCor() {
-    titulo.style.color = 'red';   
+    title.style.color = 'red';
+    paragraph.style.color = 'red';     
 }
 
-titulo.addEventListener('click', mudaCor(titulo));
-paragrafo.addEventListened('click', mudaCor(paragrafo));
+title.addEventListener('click', mudaCor(title));
+paragraph.addEventListened('click', mudaCor(paragraph));
