@@ -1,0 +1,46 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  background: purple;
+  padding: 5px;
+  gap: 5px;
+}
+
+.grid-item {
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 30px;
+  text-align: center;
+}
+
+.menu {
+  height: 10vh;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.main {
+  height: 75vh;
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.right {
+  background: purple;
+  grid-column-start: 3 / 4;
+  grid-row-start: 2 / 3;
+  text-align: center;
+}
+
+.left {
+  background: purple;
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+.footer {
+  height: 10vh;
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
